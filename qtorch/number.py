@@ -1,4 +1,4 @@
-__all__ = ["Number", "FixedPoint", "BlockFloatingPoint", "FloatingPoint"]
+__all__ = ["Number", "FixedPoint", "BlockFloatingPoint", "FloatingPoint", "Dummy"]
 
 
 class Number:
@@ -131,3 +131,7 @@ class BlockFloatingPoint(Number):
 
     def __repr__(self):
         return "BlockFloatingPoint (wl={:d}, dim={:d})".format(self.wl, self.dim)
+
+class Dummy():
+    def __init__(self):
+        print("dummy")
